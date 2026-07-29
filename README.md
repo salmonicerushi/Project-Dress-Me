@@ -107,6 +107,8 @@ git clone https://github.com/salmonicerushi/project-dress-me.git
 
 University of Sussex
 
+Web 3D Application
+
 Computer Science
 
 2026
