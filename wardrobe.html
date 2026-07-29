@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet"
+      href="css/wardrobe.css">
+
+<script type="importmap">
+{
+    "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+}
+</script>
+
+</head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PROJECT:DRESS ME</title>
+
+    <link rel="stylesheet"
+          href="css/wardrobe.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="overlay">
+
+
+
+        <header>
+
+            <h1>PROJECT:DRESS ME</h1>
+
+            <nav>
+
+                <a href="index.html">
+
+                    <button> 
+                    
+                        RETURN TO SYSTEM
+
+                    </button>
+                
+                </a>
+
+                <a href="about.html">ABOUT</a>
+
+            </nav>
+
+        </header>
+
+
+        <section class="hero">
+
+            <p>
+               drag to rotate
+            </p>
+
+            <h2>SELECT YOUR FIT</h2>
+
+            <p>
+                Editorial streetwear for digitally unstable entities.
+            </p>
+
+             <div class="camera-controls">
+                <button onclick="frontView()"> CENTRE </button>
+                <button onclick="sideView()"> PROFILE </button>
+                <button onclick="detailView()"> DETAIL </button>
+            </div>
+
+            <div class="scroll-arrow"
+                onclick="document.querySelector('.cards').scrollIntoView({ behavior: 'smooth' });">
+
+                ▼
+            </div>
+
+        
+        </section>
+
+
+
+        <!-- cardds -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>LOOK_01</h3>
+
+                <p>
+                    Layered monochrome silhouette.
+                </p>
+
+                <button onclick="window.location.href='look1.html'">
+                    
+                    WEAR
+                
+                </button>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>LOOK_02</h3>
+
+                <p>
+                    Distorted cyber-fashion tailoring.
+                </p>
+
+                <button onclick="window.location.href='look2.html'">
+                    
+                    WEAR
+                
+                </button>
+
+            
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>MUSTARD.exe</h3>
+
+                <p>
+                    Nutritionally suspicious couture.
+                </p>
+
+                <button onclick="window.location.href='mustard.html'">
+                    ACTIVATE 
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+
+
+    <script type="module"
+            src="js/wardrobe.js"></script>
+
+</body>
+
+</html>

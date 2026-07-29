@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MUSTARD.exe</title>
+
+    <link rel="stylesheet"
+          href="css/mustard.css">
+
+
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+
+</head>
+
+<audio id="mustardSound">
+
+    <source
+    src="audio/mustard.mp3"
+    type="audio/mpeg">
+
+</audio>
+
+<body>
+
+
+
+    <div class="container">
+
+
+        <div id="scene-container"></div>
+
+        <div class="info-panel">
+
+            <p class="tag">
+                PROJECT:DRESS ME
+            </p>
+
+            <h1>
+                MUSTARD.exe
+            </h1>
+
+            <p class="price">
+                £1,199.99
+            </p>
+
+            <p class="description">
+
+                Condiment.
+
+                <br><br>
+
+                Processed yellow substance developed
+                for emotionally unstable entities.
+
+                <br><br>
+
+                Typically associated with:
+                hot dogs,
+                bad decisions,
+                and industrial quantities
+                of vinegar.
+
+            </p>
+
+            <p class="interaction">
+
+                Drag to rotate.
+
+                <br>
+
+                Toggle mesh visibility below.
+
+            </p>
+
+
+
+            <button id="wireframeBtn">
+
+                TOGGLE WIREFRAME
+
+            </button>
+
+
+
+            <button class="soldout">
+
+                SOLD OUT
+
+            </button>
+
+            <button class="buy-button" onclick="consumeMustard()"> YUM YUM YUM </button>
+
+            <a href="wardrobe.html">
+
+                <button class="back-button"> RETURN TO SYSTEM </button>
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <script type="module"
+            src="js/mustard.js"></script>
+
+</body>
+
+</html>

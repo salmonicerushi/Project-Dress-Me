@@ -1,0 +1,571 @@
+/* look 2 full css*/
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+
+    background: #050505;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    overflow: hidden;
+}
+
+
+
+/* top barrr*/
+
+.brand-bar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 50px;
+
+    z-index: 100;
+
+    background: rgba(0,0,0,0.2);
+
+    backdrop-filter: blur(10px);
+}
+
+
+.brand-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+
+/* the baby head*/
+
+#head-scene {
+
+    width: 70px;
+    height: 70px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.brand-text h1 {
+
+    font-size: 1.5rem;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 10px;
+}
+
+
+
+.brand-text p {
+
+    color: rgba(255,255,255,0.5);
+
+    letter-spacing: 2px;
+
+    font-size: 0.8rem;
+}
+
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    letter-spacing: 3px;
+
+    transition: 0.3s;
+}
+
+
+
+nav a:hover {
+
+    opacity: 0.5;
+}
+
+
+
+/* page main layout */
+
+.main-layout {
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 120px 80px 40px 80px;
+}
+
+
+#look-scene {
+
+    width: 55vw;
+
+    height: 85vh;
+}
+
+
+
+.info-panel {
+
+    width: 35%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+
+
+.brand {
+
+    color: rgba(255,255,255,0.5);
+
+    letter-spacing: 4px;
+}
+
+
+
+.info-panel h2 {
+
+    font-size: 5rem;
+
+    line-height: 0.9;
+}
+
+
+
+.info-panel h3 {
+
+    font-size: 2rem;
+
+    color: rgba(255,255,255,0.7);
+}
+
+
+
+.info-panel p {
+
+    color: rgba(255,255,255,0.6);
+
+    line-height: 1.8;
+}
+
+
+
+/* COLOUR BUTTONS */
+
+.colour-buttons {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+
+.colour-buttons button {
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+
+.colour-buttons button:hover {
+
+    transform: scale(1.1);
+}
+
+
+
+/* MAIN BUTTON */
+
+.info-panel button {
+
+    width: fit-content;
+
+    padding: 15px 30px;
+
+    background: white;
+
+    color: black;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    transition: 0.3s;
+}
+
+
+
+.info-panel button:hover {
+
+    opacity: 0.7;
+}
+
+
+/* Mmobile */
+
+@media(max-width: 900px) {
+
+    body {
+
+        overflow-y: auto;
+    }
+
+    .main-layout {
+
+        flex-direction: column;
+
+        gap: 50px;
+
+        padding: 180px 40px 40px 40px;
+    }
+
+    #look-scene {
+
+        width: 100%;
+        height: 50vh;
+    }
+
+    .info-panel {
+
+        width: 100%;
+    }
+
+    .info-panel h2 {
+
+        font-size: 3rem;
+    }
+
+}
+
+.colour-buttons {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+
+/* mustard button bottle body */
+
+.mustard-button {
+
+    width: 55px;
+    height: 85px;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    position: relative;
+
+    clip-path: polygon(
+        38% 0%,
+        62% 0%,
+        66% 10%,
+        72% 15%,
+        75% 25%,
+        70% 100%,
+        30% 100%,
+        25% 25%,
+        28% 15%,
+        34% 10%
+    );
+
+    box-shadow:
+    0 0 15px rgba(255,255,255,0.15);
+}
+
+
+
+/* mustard button - the cap dimentions */
+
+.mustard-button::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -8px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 22px;
+    height: 14px;
+
+    background: #d4a017;
+
+    border-radius: 4px 4px 0 0;
+}
+
+
+
+/* mustard buttons- the body */
+
+.mustard-button::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 28px;
+    height: 18px;
+
+    background: rgba(255,255,255,0.7);
+
+    border-radius: 4px;
+}
+
+
+
+/* mustard buttons */
+
+.mustard-button:hover {
+
+    transform:
+    scale(1.08)
+    rotate(-4deg);
+
+}
+
+
+
+/* changing shirt coloursssss */
+
+.grey {
+
+    background: #b1ababd2;
+}
+
+.red {
+
+    background: #7c0d0d;
+}
+
+.black {
+
+    background: #222222;
+}
+
+.blue {
+
+    background: #000052;
+}
+
+.pink {
+
+    background: #FDAB9F;
+}
+
+.buy-button {
+
+    width: fit-content;
+
+    padding: 18px 40px;
+
+    background: white;
+
+    color: black;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    transition: 0.3s;
+
+    font-size: 0.9rem;
+}
+
+
+
+.buy-button:hover {
+
+    transform: scale(1.05);
+
+    opacity: 0.8;
+}
+
+/*head button*/
+
+#head-button {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+
+#head-button p {
+
+    font-size: 0.7rem;
+
+    letter-spacing: 3px;
+
+    margin-top: 8px;
+
+    color:
+    rgba(255,255,255,0.6);
+}
+
+
+
+#head-button:hover {
+
+    transform: scale(1.05);
+}
+
+/* popup*/
+
+#popup {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background:
+    rgba(0,0,0,0.9);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 9999;
+}
+
+/* popuppp */
+
+.popup-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    animation:
+    popupFade 0.4s ease;
+}
+
+
+
+.popup-content img { /* image */
+
+    width: 1500px;
+
+    max-width: 170vw;
+
+    filter:
+    drop-shadow(
+        0 0 40px rgba(255,255,255,0.15)
+    );
+}
+
+/* close- tiny almost bugged */
+
+#closePopup {
+
+    margin-top: 30px;
+}
+
+
+
+/* animationnnnnn */
+
+@keyframes popupFade {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+        scale(0.9);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+        scale(1);
+    }
+
+}

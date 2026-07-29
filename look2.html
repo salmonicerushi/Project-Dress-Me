@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LOOK_02 | PROJECT:DRESS ME</title>
+
+    <link rel="stylesheet"
+          href="css/look2.css">
+
+
+
+
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js"
+      }
+    }
+    </script>
+
+</head>
+
+<body>
+
+
+    <header class="brand-bar">
+
+        <div class="brand-left">
+
+            <div id="head-button">
+                <div id="head-scene"></div>
+                <p>DRESS ME</p>
+            </div>
+
+            <div class="brand-text">
+
+                <h1>PROJECT:DRESS ME</h1>
+
+                <p>
+                    Digital fashion for unstable entities.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <nav>
+
+            <a href="wardrobe.html">
+                BACK
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <section class="main-layout">
+
+        <div id="look-scene"></div>
+
+
+
+        <div class="info-panel">
+
+            <p class="brand">
+                PROJECT:DRESS ME
+            </p>
+
+            <h2>LOOK_02</h2>
+
+            <h3>£4000</h3>
+
+            <p>
+                Oversized symmetrical streetwear
+                silhouette designed for emotionally
+                unstable runway environments.
+            </p>
+
+            <p>
+                Interactive garment viewer.
+                Rotate and customise colours below.
+            </p>
+
+
+            <div class="colour-buttons">
+
+
+                <button
+                class="mustard-button grey"
+                style="background:#b1ababd2"
+                onclick="changeColour('#b1abab')">
+                </button>
+
+                <button
+                class="mustard-button red"
+                style="background:#7c0d0d"
+                onclick="changeColour('#7c0d0d')">
+                </button>
+
+                <button
+                class="mustard-button black"
+                style="background:#222222"
+                onclick="changeColour('#222222')">
+                </button>
+            
+                <button
+                class="mustard-button blue"
+                style="background:#000052"
+                onclick="changeColour('#000052')">
+                </button>
+
+                <button
+                class="mustard-button pink"
+                style="background:#FDAB9F"
+                onclick="changeColour('#FDAB9F')">
+                </button>
+
+            </div>
+
+
+
+            <button onclick="toggleWireframe()"> TOGGLE WIREFRAME </button>
+
+            <button onclick="toggleLight()"> RUNWAY LIGHT </button>
+
+            <button class="buy-button"
+            onclick="alert('PURCHASE COMPLETE')">
+             PURCHASE ENTITY 
+            </button>
+
+        </div>
+
+    </section>
+
+<!-- popup - preetty imp i reckon -->
+
+<div id="popup">
+
+    <div class="popup-content">
+
+        <img
+        src="images/dressedMascot2.png"
+        alt="Dressed Mascot">
+
+        <button id="closePopup">
+
+            CLOSE
+
+        </button>
+
+    </div>
+
+</div>
+
+    <script type="module"
+            src="js/look2.js"></script>
+
+</body>
+
+</html>
