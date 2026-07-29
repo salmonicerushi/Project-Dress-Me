@@ -74,16 +74,16 @@ Users can:
 ## Screenshots
 
 ### Homepage
-![Homepage](images/home.png)
+![Homepage](Screenshots/home.png)
 
 ### Wardrobe
-![Wardrobe](images/wardrobe.png)
+![Wardrobe](Screenshots/wardrobe.png)
 
 ### LOOK_01
-![Look 1](images/look1.png)
+![Look 1](Screenshots/look1.png)
 
 ### MUSTARD.exe
-![Mustard](images/mustard.png)
+![Mustard](Screenshots/mustard.png)
 
 ## Development
 
